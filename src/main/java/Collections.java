@@ -9,7 +9,6 @@ public class Collections {
     public static <T> int binarySearch(List<? extends T> list, T key, Comparator<? super T> c) {
         int fromIndex = 0;
         int toIndex = list.size();
-        // Реализация бинарного поиска для списка
         while (fromIndex < toIndex) {
             int mid = fromIndex + (toIndex - fromIndex) / 2;
             int cmp = (c == null) ? ((Comparable<? super T>) list.get(mid)).compareTo(key) : c.compare(list.get(mid), key);
@@ -18,9 +17,9 @@ public class Collections {
             } else if (cmp > 0) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 } 

@@ -15,10 +15,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(char[] a, char key) {
@@ -33,10 +33,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(double[] a, double key) {
@@ -51,10 +51,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(float[] a, float key) {
@@ -69,10 +69,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(int[] a, int key) {
@@ -87,10 +87,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(long[] a, long key) {
@@ -105,10 +105,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static int binarySearch(short[] a, short key) {
@@ -123,10 +123,10 @@ public class Arrays {
             } else if (a[mid] > key) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 
     public static <T> int binarySearch(T[] a, T key, Comparator<? super T> c) {
@@ -142,9 +142,9 @@ public class Arrays {
             } else if (cmp > 0) {
                 toIndex = mid;
             } else {
-                return mid; // найден
+                return mid;
             }
         }
-        return -(fromIndex + 1); // не найден
+        return -(fromIndex + 1);
     }
 }
